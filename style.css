@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  margin-top: 5vh;
+  font-weight: 500;
+  font-size: large;
+}
+li {
+  cursor: pointer;
+}
+li:hover {
+  transition: 0.2s ease-in-out;
+  color: #fd6f00;
+}
+.center-section {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.5s ease-out;
+  box-shadow: 0 0 10px #fd6f00;
+}
+#m {
+  font-weight: bolder;
+  color: black;
+}
+.btn-el {
+  background-color: #fd6f00;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.image {
+  position: relative;
+}
+img {
+  max-width: 30vw;
+  position: relative;
+}
+.person-image:hover {
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0.1rem -0.1rem 15px #fd6f00);
+}
+#hello {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+#name {
+  color: #fd6f00;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.text {
+  margin-left: 5rem;
+}
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+#left {
+  margin-left: 10rem;
+}
+p {
+  font-weight: 500;
+  color: rgb(28, 27, 27);
+  font-size: 16px;
+}
+#Hire {
+  padding: 0.8rem 2rem;
+  font-size: 15px;
+}
+.home-sci {
+  position: absolute;
+  bottom: -3rem;
+  right: 5rem;
+}
+i {
+  color: black;
+  font-size: 35px;
+  letter-spacing: 15px;
+}
+i:hover {
+  color: #fd6f00;
+}
+#second {
+  text-align: start;
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#second-face {
+  max-width: 40vw;
+}
+#second-div1 {
+  width: 50%;
+  margin-right: 45px;
+  padding-right: 45px;
+}
+.bar {
+  font-size: 23px;
+}
+.Technical-bars .bar {
+  margin: 40px 0;
+}
+.Technical-bars .bar:first-child {
+  margin-top: 0;
+}
+.Technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.Technical-bars .bar .info {
+  margin-bottom: 10px;
+}
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 8px;
+  background-color: rgb(252, 228, 228);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #fd6f00;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 85%;
+}
+.progress-line.Javascript span {
+  width: 95%;
+}
+.progress-line.java span {
+  width: 90%;
+}
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -28px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "60%";
+}
+.progress-line.Javascript span::after {
+  content: "80%";
+}
+.progress-line.java span::after {
+  content: "95%";
+}
+.progress-line.python span::after {
+  content: "70%";
+}
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.grey {
+  background-color: rgba(198, 196, 196, 0.216);
+  padding: 1rem 0 0rem 2rem;
+}
+#Services-id {
+  max-width: 50%;
+  margin-left: 25rem;
+}
+#skillDetail-id {
+  display: flex;
+  margin-top: 5rem;
+  max-width: 90%;
+  margin-left: 5rem;
+  gap: 1rem;
+  text-align: start;
+  height: 17rem;
+}
+#Projects-heading {
+  max-width: 55%;
+  margin-left: 21rem;
+  margin-top: 8rem;
+}
+#Projects {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.Projects-btn {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 7px;
+  transition: 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+}
+.Projects-btn:hover {
+  background-color: #fd6f00;
+  color: white;
+}
+.layout {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+  width: 96%;
+  margin-left: 2rem;
+}
+.layout-text {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-top: 1rem;
+  width: 96%;
+  margin-left: 2rem;
+  text-align: initial;
+}
+.grow1 {
+  flex-grow: 1;
+  background-color: #ffebdb;
+  position: relative;
+  width: 1rem;
+}
+.adjust {
+  position: absolute;
+  right: 5rem;
+  bottom: 0rem;
+}
+h4 {
+  color: #fd6f00;
+}
+#fifth {
+  padding: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 86rem;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  padding: 3rem 2rem;
+  background-color: rgba(198, 196, 196, 0.216);
+}
+.slider-text {
+  margin-left: 1rem;
+}
+.colon {
+  color: #fd6f00;
+  font-size: xx-large;
+}
+#sixth {
+  margin-top: 8rem;
+}
+#E-mail {
+  height: 3.125rem;
+  padding: 0.1rem 1.25em;
+  font-size: 14px;
+  width: 33%;
+  font-size: large;
+  border: 1px solid #afafaf;
+  background: #f8f8f8;
+  border-radius: 12px;
+  outline: none;
+}
+#Contact {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+footer {
+  margin-top: 5rem;
+}
+footer i {
+  margin-top: 3rem;
+}
+#footer-copyright p {
+  background: #545454;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#footer-copyright p span {
+  color: #fd6f00;
+}
